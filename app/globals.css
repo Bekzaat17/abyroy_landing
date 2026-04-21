@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
+@theme {
+  --color-rehab-gold: #D4AF37;
+  --color-rehab-gold-dark: #B8962E;
+  --color-rehab-dark: #2D2D2D;
+  --color-rehab-light: #F8F9FA;
+  --color-rehab-muted: #6B7280;
+  
+  --radius-header: 2rem;
+  --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #1D1D1F;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply antialiased selection:bg-rehab-gold/30;
+}
+
+/* Стили полей ввода как в макете */
+.input-field {
+  @apply w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:outline-none focus:border-rehab-gold/50 transition-all;
+}
+
+.btn-primary {
+  @apply bg-rehab-gold hover:bg-rehab-gold-dark text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-lg shadow-rehab-gold/20 active:scale-95 text-center;
 }
