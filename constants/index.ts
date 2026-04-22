@@ -1,7 +1,8 @@
 export const SITE_DATA = {
-  phone: "+7 (707) 123-45-67",
-  whatsapp: "https://wa.me/77071234567",
-  address: "г. Шымкент, ул. Байтурсынова, 10",
+  phone: "+7 (775) 533-16-72",
+  whatsapp: "https://wa.me/77755331672",
+  instagram: "https://instagram.com/abyroyrehab.kz",
+  address: "г. Шымкент, ул. Байтурсынова, 78",
   roadmap: [
     { id: 1, title: "Первичная консультация", desc: "Анонимный прием и мотивация" },
     { id: 2, title: "Диагностика", desc: "Медицинское обследование" },
