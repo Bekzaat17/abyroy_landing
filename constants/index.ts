@@ -13,7 +13,9 @@ export const SITE_DATA = {
 };
 
 export const SEO_DATA = {
-  title: "rehab",
-  description: "rehab description",
-  keywords: "alfaPVP",
+  title: "Abyroy Rehab в Шымкенте | Лечение наркомании, алкоголизма и игромании",
+  description: "Центр реабилитации Abyroy в Шымкенте: эффективное лечение наркомании, алкоголизма и игровой зависимости. Анонимно, 15+ лет опыта, 92% успешных результатов. Звоните: +7 (775) 533-16-72.",
+  keywords: "лечение наркомании Шымкент, реабилитационный центр Шымкент, лечение алкоголизма, лечение игромании, анонимное лечение зависимостей, Abyroy Rehab",
+  siteName: "Abyroy Rehab",
+  url: "https://abyroyrehab.kz" 
 };
