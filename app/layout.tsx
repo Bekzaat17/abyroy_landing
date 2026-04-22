@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "addressLocality": "Шымкент",
       "streetAddress": "ул. Байтурсынова, 78"
     },
-    "telephone": "+77755331672",
+    "telephone": "+77775331672",
     "url": "https://abyroyrehab.kz",
     "priceRange": "$$"
   };

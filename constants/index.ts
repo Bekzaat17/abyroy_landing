@@ -1,6 +1,6 @@
 export const SITE_DATA = {
-  phone: "+7 (775) 533-16-72",
-  whatsapp: "https://wa.me/77755331672",
+  phone: "+7 (777) 533-16-72",
+  whatsapp: "https://wa.me/77775331672",
   instagram: "https://instagram.com/abyroyrehab.kz",
   address: "г. Шымкент, ул. Байтурсынова, 78",
   roadmap: [
