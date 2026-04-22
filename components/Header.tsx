@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image"; // Импортируем компонент Image
+import Image from "next/image";
 import { Phone } from "lucide-react";
 import { SITE_DATA } from "@/constants";
 
@@ -11,12 +11,12 @@ export default function Header() {
         {/* Логотип */}
         <Link href="/" className="flex items-center gap-2">
           <Image 
-            src="/logo.png"       // Путь к файлу в папке public
+            src="/logo.png"       
             alt="Abyroy Logo" 
-            width={140}           // Укажите нужную ширину
-            height={100}           // Укажите нужную высоту
-            className="h-10 w-auto" // h-10 соответствует h-40px, w-auto сохранит пропорции
-            priority              // Добавляем, чтобы логотип загружался первым
+            width={140}           
+            height={100}           
+            className="h-8 md:h-10 w-auto" 
+            priority              
           />
         </Link>
 
@@ -32,9 +32,9 @@ export default function Header() {
         {/* Кнопка звонка */}
         <a 
           href={`tel:${SITE_DATA.phone}`}
-          className="bg-rehab-gold text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-rehab-goldDark transition-all flex items-center gap-2 shadow-lg shadow-rehab-gold/20"
+          className="bg-rehab-gold text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full text-xs md:text-sm font-bold hover:bg-rehab-goldDark transition-all flex items-center gap-2 shadow-lg shadow-rehab-gold/20 whitespace-nowrap"
         >
-          <Phone size={16} />
+          <Phone size={16} className="w-4 h-4 md:w-4 md:h-4" />
           {SITE_DATA.phone}
         </a>
       </div>
