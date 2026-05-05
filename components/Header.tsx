@@ -8,16 +8,17 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         
-        {/* Логотип */}
+        {/* Логотип: w-auto позволяет сохранять пропорции при разной высоте */}
         <Link href="/" className="flex items-center gap-2">
-          <Image 
-            src="/logo.png"       
-            alt="Abyroy Logo" 
-            width={140}           
-            height={100}           
-            className="h-8 md:h-10 w-auto" 
-            priority              
-          />
+          <div className="relative h-8 md:h-10 w-[112px] md:w-[140px]">
+            <Image 
+              src="/logo.png"       
+              alt="Abyroy Logo" 
+              fill
+              priority              
+              className="object-contain"
+            />
+          </div>
         </Link>
 
         {/* Навигация */}
